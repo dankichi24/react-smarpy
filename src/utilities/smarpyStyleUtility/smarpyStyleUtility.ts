@@ -264,6 +264,30 @@ function getRootStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
         setColorDetailVariable(colorName, `050`, gradation[50]);
       }
 
+      if (color.coral) {
+        const gradation = color.coral;
+        const colorName = `coral`;
+        setColorDetailVariable(colorName, `950`, gradation[950]);
+        setColorDetailVariable(colorName, `900`, gradation[900]);
+        setColorDetailVariable(colorName, `850`, gradation[850]);
+        setColorDetailVariable(colorName, `800`, gradation[800]);
+        setColorDetailVariable(colorName, `750`, gradation[750]);
+        setColorDetailVariable(colorName, `700`, gradation[700]);
+        setColorDetailVariable(colorName, `650`, gradation[650]);
+        setColorDetailVariable(colorName, `600`, gradation[600]);
+        setColorDetailVariable(colorName, `550`, gradation[550]);
+        setColorDetailVariable(colorName, `500`, gradation[500]);
+        setColorDetailVariable(colorName, `450`, gradation[450]);
+        setColorDetailVariable(colorName, `400`, gradation[400]);
+        setColorDetailVariable(colorName, `350`, gradation[350]);
+        setColorDetailVariable(colorName, `300`, gradation[300]);
+        setColorDetailVariable(colorName, `250`, gradation[250]);
+        setColorDetailVariable(colorName, `200`, gradation[200]);
+        setColorDetailVariable(colorName, `150`, gradation[150]);
+        setColorDetailVariable(colorName, `100`, gradation[100]);
+        setColorDetailVariable(colorName, `050`, gradation[50]);
+      }
+
       if (color.orange) {
         const gradation = color.orange;
         const colorName = `orange`;
@@ -291,6 +315,30 @@ function getRootStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
       if (color.yellow) {
         const gradation = color.yellow;
         const colorName = `yellow`;
+        setColorDetailVariable(colorName, `950`, gradation[950]);
+        setColorDetailVariable(colorName, `900`, gradation[900]);
+        setColorDetailVariable(colorName, `850`, gradation[850]);
+        setColorDetailVariable(colorName, `800`, gradation[800]);
+        setColorDetailVariable(colorName, `750`, gradation[750]);
+        setColorDetailVariable(colorName, `700`, gradation[700]);
+        setColorDetailVariable(colorName, `650`, gradation[650]);
+        setColorDetailVariable(colorName, `600`, gradation[600]);
+        setColorDetailVariable(colorName, `550`, gradation[550]);
+        setColorDetailVariable(colorName, `500`, gradation[500]);
+        setColorDetailVariable(colorName, `450`, gradation[450]);
+        setColorDetailVariable(colorName, `400`, gradation[400]);
+        setColorDetailVariable(colorName, `350`, gradation[350]);
+        setColorDetailVariable(colorName, `300`, gradation[300]);
+        setColorDetailVariable(colorName, `250`, gradation[250]);
+        setColorDetailVariable(colorName, `200`, gradation[200]);
+        setColorDetailVariable(colorName, `150`, gradation[150]);
+        setColorDetailVariable(colorName, `100`, gradation[100]);
+        setColorDetailVariable(colorName, `050`, gradation[50]);
+      }
+
+      if (color.lime) {
+        const gradation = color.lime;
+        const colorName = `lime`;
         setColorDetailVariable(colorName, `950`, gradation[950]);
         setColorDetailVariable(colorName, `900`, gradation[900]);
         setColorDetailVariable(colorName, `850`, gradation[850]);
@@ -649,6 +697,16 @@ function getLightSchemeStyles(
         lightSchemeStyles.push(...styles);
       }
     }
+    if (component.coral) {
+      const styles = getColorVariables(
+        `coral`,
+        component.coral,
+        elementName
+      );
+      if (styles.length > 0) {
+        lightSchemeStyles.push(...styles);
+      }
+    }
     if (component.orange) {
       const styles = getColorVariables(
         `orange`,
@@ -663,6 +721,16 @@ function getLightSchemeStyles(
       const styles = getColorVariables(
         `yellow`,
         component.yellow,
+        elementName
+      );
+      if (styles.length > 0) {
+        lightSchemeStyles.push(...styles);
+      }
+    }
+    if (component.lime) {
+      const styles = getColorVariables(
+        `lime`,
+        component.lime,
         elementName
       );
       if (styles.length > 0) {
@@ -743,6 +811,12 @@ function getLightSchemeStyles(
             lightSchemeStyles.push(...styles);
           }
         }
+        if (color.light.coral) {
+          const styles = getColorVariables(`coral`, color.light.coral);
+          if (styles.length > 0) {
+            lightSchemeStyles.push(...styles);
+          }
+        }
         if (color.light.orange) {
           const styles = getColorVariables(`orange`, color.light.orange);
           if (styles.length > 0) {
@@ -751,6 +825,12 @@ function getLightSchemeStyles(
         }
         if (color.light.yellow) {
           const styles = getColorVariables(`yellow`, color.light.yellow);
+          if (styles.length > 0) {
+            lightSchemeStyles.push(...styles);
+          }
+        }
+        if (color.light.lime) {
+          const styles = getColorVariables(`lime`, color.light.lime);
           if (styles.length > 0) {
             lightSchemeStyles.push(...styles);
           }
@@ -914,6 +994,16 @@ function getDarkSchemeStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
         darkSchemeStyles.push(...styles);
       }
     }
+    if (component.coral) {
+      const styles = getColorVariables(
+        `coral`,
+        component.coral,
+        elementName
+      );
+      if (styles.length > 0) {
+        darkSchemeStyles.push(...styles);
+      }
+    }
     if (component.orange) {
       const styles = getColorVariables(
         `orange`,
@@ -928,6 +1018,16 @@ function getDarkSchemeStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
       const styles = getColorVariables(
         `yellow`,
         component.yellow,
+        elementName
+      );
+      if (styles.length > 0) {
+        darkSchemeStyles.push(...styles);
+      }
+    }
+    if (component.lime) {
+      const styles = getColorVariables(
+        `lime`,
+        component.lime,
         elementName
       );
       if (styles.length > 0) {
@@ -1008,6 +1108,12 @@ function getDarkSchemeStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
             darkSchemeStyles.push(...styles);
           }
         }
+        if (color.dark.coral) {
+          const styles = getColorVariables(`coral`, color.dark.coral);
+          if (styles.length > 0) {
+            darkSchemeStyles.push(...styles);
+          }
+        }
         if (color.dark.orange) {
           const styles = getColorVariables(`orange`, color.dark.orange);
           if (styles.length > 0) {
@@ -1016,6 +1122,12 @@ function getDarkSchemeStyles(cssVariableSetting?: SmarpyCssVariable): string[] {
         }
         if (color.dark.yellow) {
           const styles = getColorVariables(`yellow`, color.dark.yellow);
+          if (styles.length > 0) {
+            darkSchemeStyles.push(...styles);
+          }
+        }
+        if (color.dark.lime) {
+          const styles = getColorVariables(`lime`, color.dark.lime);
           if (styles.length > 0) {
             darkSchemeStyles.push(...styles);
           }

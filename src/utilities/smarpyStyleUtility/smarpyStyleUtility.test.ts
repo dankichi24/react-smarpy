@@ -5,8 +5,10 @@ import { SmarpyCssVariable } from "../../react-smarpy";
 const colors: string[] = [
   "gray",
   "red",
+  "coral",
   "orange",
   "yellow",
+  "lime",
   "green",
   "cyan",
   "blue",

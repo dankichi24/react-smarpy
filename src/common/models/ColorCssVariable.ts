@@ -7,8 +7,10 @@ export default interface ColorCssVariable {
   black?: Oklch | string | undefined;
   gray?: Gradation | undefined;
   red?: Gradation | undefined;
+  coral?: Gradation | undefined;
   orange?: Gradation | undefined;
   yellow?: Gradation | undefined;
+  lime?: Gradation | undefined;
   green?: Gradation | undefined;
   cyan?: Gradation | undefined;
   blue?: Gradation | undefined;
