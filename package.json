@@ -1,0 +1,406 @@
+{
+  "name": "@smartupcorp/react-smarpy",
+  "version": "0.0.0",
+  "description": "an open-source react wrapper for smarpy",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "rimraf dist",
+    "build": "vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartupcorp/react-smarpy.git"
+  },
+  "keywords": [
+    "smartupcorp",
+    "smarpy",
+    "css",
+    "react",
+    "emotion"
+  ],
+  "author": "smartupcorp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smartupcorp/react-smarpy/issues"
+  },
+  "homepage": "https://github.com/smartupcorp/react-smarpy#readme",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/react-smarpy.d.ts",
+      "import": "./dist/react-smarpy.js"
+    },
+    "./backgrounds": {
+      "types": "./dist/backgrounds/index.d.ts",
+      "import": "./dist/backgrounds/index.js"
+    },
+    "./backgrounds/Dot": {
+      "types": "./dist/backgrounds/Dot/index.d.ts",
+      "import": "./dist/backgrounds/Dot/index.js"
+    },
+    "./backgrounds/Gingham": {
+      "types": "./dist/backgrounds/Gingham/index.d.ts",
+      "import": "./dist/backgrounds/Gingham/index.js"
+    },
+    "./backgrounds/Stripe": {
+      "types": "./dist/backgrounds/Stripe/index.d.ts",
+      "import": "./dist/backgrounds/Stripe/index.js"
+    },
+    "./base": {
+      "types": "./dist/base/index.d.ts",
+      "import": "./dist/base/index.js"
+    },
+    "./base/Smarpy": {
+      "types": "./dist/base/Smarpy/index.d.ts",
+      "import": "./dist/base/Smarpy/index.js"
+    },
+    "./base/Soroot": {
+      "types": "./dist/base/Smaroot/index.d.ts",
+      "import": "./dist/base/Smaroot/index.js"
+    },
+    "./common/*": {
+      "types": "./dist/common/*.d.ts",
+      "import": "./dist/common/*.js"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js"
+    },
+    "./components/Accordion": {
+      "types": "./dist/components/Accordion/index.d.ts",
+      "import": "./dist/components/Accordion/index.js"
+    },
+    "./components/AccordionDetails": {
+      "types": "./dist/components/AccordionDetails/index.d.ts",
+      "import": "./dist/components/AccordionDetails/index.js"
+    },
+    "./components/AdminNav": {
+      "types": "./dist/components/AdminNav/index.d.ts",
+      "import": "./dist/components/AdminNav/index.js"
+    },
+    "./components/AdminNavBrand": {
+      "types": "./dist/components/AdminNavBrand/index.d.ts",
+      "import": "./dist/components/AdminNavBrand/index.js"
+    },
+    "./components/AdminNavBrandBasic": {
+      "types": "./dist/components/AdminNavBrandBasic/index.d.ts",
+      "import": "./dist/components/AdminNavBrandBasic/index.js"
+    },
+    "./components/AdminNavBrandCollapted": {
+      "types": "./dist/components/AdminNavBrandCollapted/index.d.ts",
+      "import": "./dist/components/AdminNavBrandCollapted/index.js"
+    },
+    "./components/AdminNavMenu": {
+      "types": "./dist/components/AdminNavMenu/index.d.ts",
+      "import": "./dist/components/AdminNavMenu/index.js"
+    },
+    "./components/AdminNavMenuItem": {
+      "types": "./dist/components/AdminNavMenuItem/index.d.ts",
+      "import": "./dist/components/AdminNavMenuItem/index.js"
+    },
+    "./components/AdminNavMenuItemBasic": {
+      "types": "./dist/components/AdminNavMenuItemBasic/index.d.ts",
+      "import": "./dist/components/AdminNavMenuItemBasic/index.js"
+    },
+    "./components/AdminNavMenuItemCollapted": {
+      "types": "./dist/components/AdminNavMenuItemCollapted/index.d.ts",
+      "import": "./dist/components/AdminNavMenuItemCollapted/index.js"
+    },
+    "./components/Badge": {
+      "types": "./dist/components/Badge/index.d.ts",
+      "import": "./dist/components/Badge/index.js"
+    },
+    "./components/Breadcrumb": {
+      "types": "./dist/components/Breadcrumb/index.d.ts",
+      "import": "./dist/components/Breadcrumb/index.js"
+    },
+    "./components/BreadcrumbItem": {
+      "types": "./dist/components/BreadcrumbItem/index.d.ts",
+      "import": "./dist/components/BreadcrumbItem/index.js"
+    },
+    "./components/BreadcrumbWrapper": {
+      "types": "./dist/components/BreadcrumbWrapper/index.d.ts",
+      "import": "./dist/components/BreadcrumbWrapper/index.js"
+    },
+    "./components/Button": {
+      "types": "./dist/components/Button/index.d.ts",
+      "import": "./dist/components/Button/index.js"
+    },
+    "./components/Card": {
+      "types": "./dist/components/Card/index.d.ts",
+      "import": "./dist/components/Card/index.js"
+    },
+    "./components/CardBody": {
+      "types": "./dist/components/CardBody/index.d.ts",
+      "import": "./dist/components/CardBody/index.js"
+    },
+    "./components/CardTitle": {
+      "types": "./dist/components/CardTitle/index.d.ts",
+      "import": "./dist/components/CardTitle/index.js"
+    },
+    "./components/Checkbox": {
+      "types": "./dist/components/Checkbox/index.d.ts",
+      "import": "./dist/components/Checkbox/index.js"
+    },
+    "./components/Dialog": {
+      "types": "./dist/components/Dialog/index.d.ts",
+      "import": "./dist/components/Dialog/index.js"
+    },
+    "./components/DialogAvatar": {
+      "types": "./dist/components/DialogAvatar/index.d.ts",
+      "import": "./dist/components/DialogAvatar/index.js"
+    },
+    "./components/DialogAvatarContainer": {
+      "types": "./dist/components/DialogAvatarContainer/index.d.ts",
+      "import": "./dist/components/DialogAvatarContainer/index.js"
+    },
+    "./components/DialogContentContainer": {
+      "types": "./dist/components/DialogContentContainer/index.d.ts",
+      "import": "./dist/components/DialogContentContainer/index.js"
+    },
+    "./components/DialogMessage": {
+      "types": "./dist/components/DialogMessage/index.d.ts",
+      "import": "./dist/components/DialogMessage/index.js"
+    },
+    "./components/DialogMessageInner": {
+      "types": "./dist/components/DialogMessageInner/index.d.ts",
+      "import": "./dist/components/DialogMessageInner/index.js"
+    },
+    "./components/DialogName": {
+      "types": "./dist/components/DialogName/index.d.ts",
+      "import": "./dist/components/DialogName/index.js"
+    },
+    "./components/Div": {
+      "types": "./dist/components/Div/index.d.ts",
+      "import": "./dist/components/Div/index.js"
+    },
+    "./components/Footer": {
+      "types": "./dist/components/Footer/index.d.ts",
+      "import": "./dist/components/Footer/index.js"
+    },
+    "./components/Hamburger": {
+      "types": "./dist/components/Hamburger/index.d.ts",
+      "import": "./dist/components/Hamburger/index.js"
+    },
+    "./components/Header": {
+      "types": "./dist/components/Header/index.d.ts",
+      "import": "./dist/components/Header/index.js"
+    },
+    "./components/Heading": {
+      "types": "./dist/components/Heading/index.d.ts",
+      "import": "./dist/components/Heading/index.js"
+    },
+    "./components/Input": {
+      "types": "./dist/components/Input/index.d.ts",
+      "import": "./dist/components/Input/index.js"
+    },
+    "./components/Label": {
+      "types": "./dist/components/Label/index.d.ts",
+      "import": "./dist/components/Label/index.js"
+    },
+    "./components/Link": {
+      "types": "./dist/components/Link/index.d.ts",
+      "import": "./dist/components/Link/index.js"
+    },
+    "./components/Loader": {
+      "types": "./dist/components/Loader/index.d.ts",
+      "import": "./dist/components/Loader/index.js"
+    },
+    "./components/Main": {
+      "types": "./dist/components/Main/index.d.ts",
+      "import": "./dist/components/Main/index.js"
+    },
+    "./components/Message": {
+      "types": "./dist/components/Message/index.d.ts",
+      "import": "./dist/components/Message/index.js"
+    },
+    "./components/MessageBody": {
+      "types": "./dist/components/MessageBody/index.d.ts",
+      "import": "./dist/components/MessageBody/index.js"
+    },
+    "./components/MessageHeader": {
+      "types": "./dist/components/MessageHeader/index.d.ts",
+      "import": "./dist/components/MessageHeader/index.js"
+    },
+    "./components/Modal": {
+      "types": "./dist/components/Modal/index.d.ts",
+      "import": "./dist/components/Modal/index.js"
+    },
+    "./components/ModalContent": {
+      "types": "./dist/components/ModalContent/index.d.ts",
+      "import": "./dist/components/ModalContent/index.js"
+    },
+    "./components/Nav": {
+      "types": "./dist/components/Nav/index.d.ts",
+      "import": "./dist/components/Nav/index.js"
+    },
+    "./components/NavAccordion": {
+      "types": "./dist/components/NavAccordion/index.d.ts",
+      "import": "./dist/components/NavAccordion/index.js"
+    },
+    "./components/NavBrand": {
+      "types": "./dist/components/NavBrand/index.d.ts",
+      "import": "./dist/components/NavBrand/index.js"
+    },
+    "./components/NavBrandCenter": {
+      "types": "./dist/components/NavBrandCenter/index.d.ts",
+      "import": "./dist/components/NavBrandCenter/index.js"
+    },
+    "./components/NavBrandLeft": {
+      "types": "./dist/components/NavBrandLeft/index.d.ts",
+      "import": "./dist/components/NavBrandLeft/index.js"
+    },
+    "./components/NavBrandRight": {
+      "types": "./dist/components/NavBrandRight/index.d.ts",
+      "import": "./dist/components/NavBrandRight/index.js"
+    },
+    "./components/NavMenu": {
+      "types": "./dist/components/NavMenu/index.d.ts",
+      "import": "./dist/components/NavMenu/index.js"
+    },
+    "./components/NavMenuItem": {
+      "types": "./dist/components/NavMenuItem/index.d.ts",
+      "import": "./dist/components/NavMenuItem/index.js"
+    },
+    "./components/NavStatic": {
+      "types": "./dist/components/NavStatic/index.d.ts",
+      "import": "./dist/components/NavStatic/index.js"
+    },
+    "./components/Paragraph": {
+      "types": "./dist/components/Paragraph/index.d.ts",
+      "import": "./dist/components/Paragraph/index.js"
+    },
+    "./components/Progress": {
+      "types": "./dist/components/Progress/index.d.ts",
+      "import": "./dist/components/Progress/index.js"
+    },
+    "./components/Ruby": {
+      "types": "./dist/components/Ruby/index.d.ts",
+      "import": "./dist/components/Ruby/index.js"
+    },
+    "./components/Section": {
+      "types": "./dist/components/Section/index.d.ts",
+      "import": "./dist/components/Section/index.js"
+    },
+    "./components/Span": {
+      "types": "./dist/components/Span/index.d.ts",
+      "import": "./dist/components/Span/index.js"
+    },
+    "./components/Textarea": {
+      "types": "./dist/components/Textarea/index.d.ts",
+      "import": "./dist/components/Textarea/index.js"
+    },
+    "./contexts": {
+      "types": "./dist/contexts/index.d.ts",
+      "import": "./dist/contexts/index.js"
+    },
+    "./contexts/SmarpyColorSchemeContext": {
+      "types": "./dist/contexts/SmarpyColorSchemeContext/index.d.ts",
+      "import": "./dist/contexts/SmarpyColorSchemeContext/index.js"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "import": "./dist/hooks/index.js"
+    },
+    "./hooks/useSmarpyCustomTheme": {
+      "types": "./dist/hooks/useSmarpyCustomTheme/index.d.ts",
+      "import": "./dist/hooks/useSmarpyCustomTheme/index.js"
+    },
+    "./layouts": {
+      "types": "./dist/layouts/index.d.ts",
+      "import": "./dist/layouts/index.js"
+    },
+    "./layouts/Admin": {
+      "types": "./dist/layouts/Admin/index.d.ts",
+      "import": "./dist/layouts/Admin/index.js"
+    },
+    "./layouts/Centering": {
+      "types": "./dist/layouts/Centering/index.d.ts",
+      "import": "./dist/layouts/Centering/index.js"
+    },
+    "./layouts/Column": {
+      "types": "./dist/layouts/Column/index.d.ts",
+      "import": "./dist/layouts/Column/index.js"
+    },
+    "./layouts/Columns": {
+      "types": "./dist/layouts/Columns/index.d.ts",
+      "import": "./dist/layouts/Columns/index.js"
+    },
+    "./layouts/Container": {
+      "types": "./dist/layouts/Container/index.d.ts",
+      "import": "./dist/layouts/Container/index.js"
+    },
+    "./utilities": {
+      "types": "./dist/utilities/index.d.ts",
+      "import": "./dist/utilities/index.js"
+    },
+    "./utilities/classNameUtility": {
+      "types": "./dist/utilities/classNameUtility/index.d.ts",
+      "import": "./dist/utilities/classNameUtility/index.js"
+    },
+    "./utilities/emotionStyleUtility": {
+      "types": "./dist/utilities/emotionStyleUtility/index.d.ts",
+      "import": "./dist/utilities/emotionStyleUtility/index.js"
+    },
+    "./utilities/smarpyStyleUtility": {
+      "types": "./dist/utilities/smarpyStyleUtility/index.d.ts",
+      "import": "./dist/utilities/smarpyStyleUtility/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "peerDependenciesMeta": {
+    "@types/react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^11.12.0",
+    "@emotion/react": "^11.14.0",
+    "@smartupcorp/smarpy": "^0.0.1",
+    "@storybook/addon-docs": "^9.0.3",
+    "@storybook/react-vite": "^9.0.3",
+    "@types/lodash": "^4.17.17",
+    "@types/node": "^22.13.17",
+    "@types/react": "^19.0.14",
+    "@types/react-dom": "^19.0.6",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "eslint": "^9.16.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-storybook": "^9.0.3",
+    "glob": "^11.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "rimraf": "^6.0.1",
+    "rollup-preserve-directives": "^1.1.3",
+    "sass": "^1.82.0",
+    "storybook": "^9.0.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.15",
+    "vite-plugin-dts": "^4.3.0",
+    "vite-plugin-lib-inject-css": "^2.1.1",
+    "vitest": "^2.1.9"
+  },
+  "overrides": {
+    "storybook": "$storybook"
+  }
+}
