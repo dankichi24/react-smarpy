@@ -1,1 +1,1 @@
-# react-smarpy
+# react-smarpy-local
